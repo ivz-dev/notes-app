@@ -9,7 +9,7 @@ export function setUpConnection() {
 }
 
 export function listNotes() {
-    return Node.find();
+    return Note.find();
 }
 
 export function createNote(data) {
@@ -20,7 +20,7 @@ export function createNote(data) {
         createdAt: new Date()
     });
 
-    return note.save();
+    return Note.save();
 }
 
 export function deleteNote(id){
